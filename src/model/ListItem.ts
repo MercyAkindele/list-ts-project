@@ -5,10 +5,7 @@ export interface Item {
 }
 
 export default class ListItem implements Item{
-  constructor(private _id:string, private _item:string, private _checked:boolean){
-    this._id = "";
-    this._item = "";
-    this._checked = false;
+  constructor(private _id:string, private _item:string, private _checked:boolean = false){
   }
   public get id():string{
     return this._id;
